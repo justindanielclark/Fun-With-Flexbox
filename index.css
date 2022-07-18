@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+
+.flex-container{
+    display: flex;;
+}
+.item {
+    position: relative;
+    color: white;
+    height: 300px;
+    flex: 1;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.flex-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.flex-controls-container {
+    display: flex;
+}
+.controls {
+    flex: 1;
+}
+form {
+    display: block;
+}
+label {
+    display: block;
+}
+input[type='number'] {
+    text-align: center;
+}
