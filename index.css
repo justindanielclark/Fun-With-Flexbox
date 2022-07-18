@@ -1,52 +1,55 @@
+/*** DEFAULT SETTINGS ***/
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
-.container {
-    margin: 0 auto;
-    width: 900px;
+
+/* CANCEL ICON */
+.material-symbols-outlined {
+    color: red;
+    border: 2px solid black;
+    background-color: white;
+    margin: 5px;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 40
 }
+.item-id {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px;
+    padding: 0px 5px;
+    font-size: 22px;
+    background-color: white;
+    border: 2px solid black;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
 
-
-.flex-container{
+}
+.flex-container {
     display: flex;;
+    flex-grow: 1;
 }
 .item {
+    border: 1px solid black;
     position: relative;
-    color: white;
     height: 300px;
     flex: 1;
-}
-.red {
-    background-color: red;
-}
-.green {
-    background-color: green;
-}
-.blue {
-    background-color: blue;
 }
 .flex-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-
-.flex-controls-container {
-    display: flex;
-}
-.controls {
-    flex: 1;
-}
-form {
-    display: block;
-}
-label {
-    display: block;
-}
-input[type='number'] {
-    text-align: center;
 }
